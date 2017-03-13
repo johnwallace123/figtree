@@ -29,7 +29,7 @@ set(ANN_TARGET_LIB ann_figtree_version)
 #
 if (WITH_ANN)
     add_subdirectory(external)
-    include_directories("${CMAKE_SOURCE_DIR}/external/ann_1.1.1/include")
+    include_directories("external/ann_1.1.1/include")
 else (WITH_ANN)
     add_definitions(-DFIGTREE_NO_ANN)
 endif (WITH_ANN)
